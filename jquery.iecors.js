@@ -7,7 +7,7 @@
 
   // Determine support properties
   (function( xdr ) {
-    jQuery.extend( jQuery.support, { iecors: !!xdr, });
+    jQuery.extend( jQuery.support, { iecors: !!xdr });
   })( jQuery.ajaxSettings.xdr() );
 
   // Create transport if the browser can provide an xdr
