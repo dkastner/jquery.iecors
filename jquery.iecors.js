@@ -31,6 +31,7 @@
 				xdr.onerror = function() {complete(404, 'Not Found')}
 				xdr.ontimeout = function() {complete(408, 'Request Time-Out')}
 			  }
+			  xdr.onprogress = function() {};
 			  xdr.timeout = 5000;
 			  xdr.open( s.type, s.url );
 
